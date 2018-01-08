@@ -1,0 +1,36 @@
+{
+	"host":"localhost",
+	"port":"27017",
+	"db":"test",
+	"collections":[
+		{
+			"name":"collectionName",
+			"instantiationDocument":
+				{
+					"property":"value",
+					"complex_property":{
+						"cp_name":"value",
+						"cp_var":12
+					}
+				},
+			"indeces":[
+				{
+					"property":1
+				},
+				{
+					"complex_property.cp_name":-1
+				}
+			],
+			"seeding":true,
+			"seeding_documents":[
+				{
+					"property":"value",
+					"complex_property":{
+						"cp_name":"value",
+						"cp_var":12
+					}
+				}
+			]
+		}
+	]
+}
